@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Vimuse - HTML5 Media Player</title>
+	<meta name="description" content="">
+	<meta name="author" content="CosmoCoder (Nilok Bose)">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Lato:400,700|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+	    <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+<body>
+
+	<header>
+		<div class="header-content">
+			<img src="images/app-screenshot.png" alt="" class="screenshot">
+
+			<div class="description">
+				<h1>Vimuse</h1>
+				<h2>HTML5 Media Player</h2>
+
+				<div class="demos">
+					<h3>See the demos</h3>
+
+					<ul>
+						<li><a href="regular.html" target="_top">Regular Player</a></li>
+						<li><a href="subtitle-postroll.html" target="_top">Subtitles &amp; Postroll</a></li>
+						<li><a href="only-audio.html" target="_top">Only Audio</a></li>
+						<li><a href="light-skin.html" target="_top">Light Skin</a></li>
+						<li><a href="youtube.html" target="_top">Youtube Playlist</a></li>
+						<li><a href="vimeo.html" target="_top">Vimeo Playlist</a></li>
+						<li><a href="dailymotion.html" target="_top">Dailymotion Playlist</a></li>
+						<li><a href="layouts.html" target="_top">Layout Options</a></li>
+						<li><a href="api.html" target="_top">Player API</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="main">
+		<section class="key-features">
+			<h2>The <span class="highlight">Key</span> Features of Vimuse</h2>
+
+			<ul>
+				<li>Play <strong>video</strong> and <strong>audio</strong> files</li>
+				<li><strong>HTML5</strong> playback with <strong>Flash</strong> fallback</li>
+				<li>Show <strong>subtitles</strong> for videos.</li>
+				<li>Show <strong>postroll</strong> content for videos</li>
+				<li>Special layout for <strong>audio-only mode</strong></li>
+				<li>Play videos from <strong>Youtube</strong>, <strong>Vimeo</strong> and <strong>Dailymotion</strong></li>
+				<li>Pull videos from Youtube <strong>user</strong>, <strong>playlist</strong> or <strong>search query</strong></li>
+				<li>Pull videos from Vimeo <strong>user</strong>, <strong>album</strong> or <strong>channel</strong></li>
+				<li>Pull videos from Dailymotion <strong>user</strong>, <strong>group</strong>, <strong>playlist</strong> or <strong>channel</strong></li>
+				<li>Play <strong>Shoutcast/Icecast</strong> streams and show <strong>track info</strong></li>
+				<li>Extract audio info from <strong>ID3 tags</strong> &ndash; cover, track, artist, album</li>
+				<li>Build playlist by <strong>scanning</strong> folder for <strong>mp3</strong> files</li>
+				<li>Several <strong>layout</strong> options</li>
+				<li>Player <strong>API</strong> functions and events</li>
+				<li><strong>Mobile</strong>, <strong>retina</strong> and <strong>touch</strong> screen optimized</li>
+			</ul>
+		</section>
+
+		<section class="options">
+			<h2><span class="highlight">All</span> Configurable Options</h2>
+
+			<ul>
+				<li>Playlist can either comprise of both audio and video or can only contain audio with a corresponding special layout for the main player area.</li>
+
+				<li>Option to have autoplay of media.</li>
+
+				<li>Option to start autoplay only when user manually starts playing after the player loads.</li>
+
+				<li>Can set the volume during initialization (or change later with player API).</li>
+
+				<li>Option to turn on playlist shuffle when the player loads.</li>
+
+				<li>Option to set the starting language for subtitles.</li>
+
+				<li>Option to show/hide the playlist when the player loads.</li>
+
+				<li>Choose to have auto-progression of playlist as each media finishes playing.</li>
+
+				<li>Option to show links to external pages in the playlist.</li>
+
+				<li>Can choose to open the external page links in new windows/tabs.</li>
+
+				<li>Option to show links for purchase pages of items in the playlist.</li>
+
+				<li>Can choose to open the purchase page links in new windows/tabs.</li>
+
+				<li>Option to show download links to media files.</li>
+
+				<li>Option to provide lyrics for audio items whose download links are shown in the playlist.</li>
+
+				<li>Option to show file-type icons (audio, video, radio) in the playlist.</li>
+
+				<li>Can choose to show delete buttons in the playlist.</li>
+
+				<li>Option to show item durations in the playlist.</li>
+
+				<li>Can make the playlist sortable.</li>
+
+				<li>Can choose to stop playback when the tab/window in which the player is embedded loses focus. This feature only works in browsers that support the HTML5 Page Visibility API.</li>
+
+				<li>The playlist can be at the <strong>bottom</strong>, <strong>left</strong> or <strong>right</strong> of the main player.</li>
+
+				<li>If the playlist position is set to "bottom" then option to set a max-height for it or just let it have auto-height.</li>
+
+				<li>Option to show thumbnails for the media in the playlist.</li>
+
+				<li>Can choose to show audio item details, such as cover-art, track, artist, album, in the main player area when "audio-only" mode is chosen.</li>
+
+				<li>Option to show cover-art when audio-only mode is chosen.</li>
+
+				<li>Option to show track details in audio-only mode.</li>
+
+				<li>Can choose to show the auxiliary control-bar beneath the main player.</li>
+
+				<li>Option to fix the main player at the top when scrolling the playlist. This option is only effective when the "bottom" playlist position is chosen.</li>
+
+				<li>Can specify the url to the json file containing the playlist details.</li>
+
+				<li>Option to extract information from mp3 id3 tags, such as cover-art, track, album, artist, duration. You can also of course provide all this information yourself, in which case this option should be disabled.</li>
+
+				<li>Option to pull cover-art for the currently playing track in a Shoutcast/Icecast stream.</li>
+
+				<li>Can set the polling interval during which the track information for a Shoutcast/Icecast stream will be refreshed.</li>
+
+				<li>A playlist caching option is provided. This is very useful when pulling videos from Youtube/Vimeo or extracting ID3 info or scanning folders for mp3's, because the entire generated playlist is stored in the cache thus resulting in faster loading of the player. Can also mention the interval after which the cache will be refreshed.</li>
+
+				<li>Option to build playlist by scanning a folder for mp3 files.</li>
+
+				<li>Option to detect mobile devices, so that they can be served special low resolution videos. The details for these low resolution videos have to be mentioned in the playlist json.</li>
+
+				<li>Can specify the source from which Youtube videos will be pulled (user, playlist or search query). Option to also specify the number of videos that are to be pulled.</li>
+
+				<li>Can specify the source from which Vimeo videos will be pulled (user, album or channel). Option to also specify the number of videos that are to be pulled.</li>
+
+				<li>Can specify the source from which Dailymotion videos will be pulled (user, group, playlist or channel). Option to also specify the number of videos that are to be pulled.</li>
+			</ul>
+		</section>
+	</div>
+
+
+</body>
+</html>

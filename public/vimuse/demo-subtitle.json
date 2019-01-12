@@ -1,0 +1,36 @@
+[
+     {
+     "title": "Video with Subtitle",
+     "type": "video",
+     "free": true,
+     "mp4": "media/video/sintel-short.mp4",
+     "webm": "media/video/sintel-short.webm",
+     "poster": "media/video/sintel.png",
+     "subtitle": [
+          {
+          "file": "media/video/sintel-en.vtt",
+          "lang": "en"
+          },
+          {
+          "file": "media/video/sintel-de.vtt",
+          "lang": "de"
+          },
+          {
+          "file": "media/video/sintel-es.vtt",
+          "lang": "es"
+          }
+          ]
+     },
+
+     {
+     "title": "Video with Postroll content",
+     "type": "video",
+     "free": true,
+     "downloadName": "sample-video.mp4",
+     "mp4": "media/video/birds.mp4",
+     "webm": "media/video/birds.webm",
+     "ogv": "media/video/birds.ogv",
+     "poster": "media/video/birds.jpg",
+     "postroll": "<h3>Postroll Content</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt amet molestias vero nobis sequi accusantium accusamus ducimus nam quam qui?</p>"
+     }
+]

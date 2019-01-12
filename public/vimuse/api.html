@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>API | Vimuse - HTML5 Media Player</title>
+	<meta name="description" content="Showcases the different API functions provided by Vimuse Media player">
+	<meta name="author" content="CosmoCoder (Nilok Bose)">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Lato|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="mediaelement/mediaelementplayer.min.css" />
+	<link rel="stylesheet" href="css/perfect-scrollbar.min.css" />
+	<link rel="stylesheet" href="css/demo.css" />
+	<link rel="stylesheet" href="css/vimuse-dark.css" />
+
+	<!--[if lt IE 9]>
+	    <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+<body>
+
+	<header>
+		<div class="header-content">
+			<h1>Vimuse</h1>
+			<h2>HTML5 Media Player</h2>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="regular.html">Regular Player</a></li>
+					<li><a href="subtitle-postroll.html">Subtitles &amp; Postroll</a></li>
+					<li><a href="only-audio.html">Only Audio</a></li>
+					<li><a href="light-skin.html">Light Skin</a></li>
+					<li><a href="youtube.html">Youtube Playlist</a></li>
+					<li><a href="vimeo.html">Vimeo Playlist</a></li>
+					<li><a href="dailymotion.html">Dailymotion Playlist</a></li>
+					<li><a href="layouts.html">Layout Options</a></li>
+					<li><a href="api.html" class="active">Player API</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="main">
+		<section>
+			<h2>Vimuse Player API Showcase</h2>
+
+			<div id="player"></div>
+
+			<ul class="api-buttons">
+				<li><a data-action="play">Play</a></li>
+				<li><a data-action="pause">Pause</a></li>
+				<li><a data-action="next">Next Item</a></li>
+				<li><a data-action="prev">Previous Item</a></li>
+				<li><a data-action="gotoFirstItem">First Item</a></li>
+				<li><a data-action="gotoLastItem">Last Item</a></li>
+			</ul>
+
+			<ul class="api-buttons input">
+				<li><a data-action="gotoItem">Go To Item</a><input type="text" value="1"></li>
+				<li><a data-action="seek">Seek To</a><input type="text" value="20"></li>
+				<li><a data-action="setVolume">Set Volume</a><input type="text" value="0.5"></li>
+			</ul>
+
+			<ul class="api-buttons result">
+				<li><a data-action="getPlaylistLength">Get Playlist Length</a><input type="text" disabled="disabled"></li>
+				<li><a data-action="currentItemIndex">Current Item Index</a><input type="text" disabled="disabled"></li>
+			</ul>
+
+			<ul class="api-buttons result">
+				<li><a data-action="currentTime">Current Time</a><input type="text" disabled="disabled"></li>
+				<li><a data-action="getVolume">Get Volume</a><input type="text" disabled="disabled"></li>
+			</ul>
+
+			<div class="event-log">
+				<textarea cols="30" rows="10" disabled="disabled">/**** Player Event Log ****/</textarea>
+			</div>
+		</section>
+
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
+	<script src="mediaelement/mediaelement-and-player.min.js"></script>
+	<script src="js/jquery-ui-1.11.4.sortable.min.js"></script>
+	<script src="js/jquery.ui.touch-punch-improved.js"></script>
+	<script src="js/jquery.hammer-full.min.js"></script>
+	<script src="js/perfect-scrollbar.jquery.min.js"></script>
+	<script src="js/jquery.vimuse.min.js"></script>
+	<script>
+		var $player = $('#player').vimuse({
+			mediaType: 'audio',
+			playlistPosition: 'right',
+			getID3Info: true,
+			showPlaylistThumbs: true,
+			enableCache: false,
+			pullRadioStreamCover: true,
+			playlistURL: 'demo-audio.json'
+		});
+
+		$log = $('div.event-log textarea');
+
+		$player.on('onSetup', function() {
+			var api = $player.data('vimuse');
+
+			$('ul.api-buttons').on('click', 'a', function() {
+				var $this = $(this),
+					action = $this.data('action');
+
+				if( $this.closest('ul').hasClass('input') ) {
+					api[action]( $this.next().val() );
+				}
+				else if( $this.closest('ul').hasClass('result') ) {
+					$this.next().val( api[action]() );
+				}
+				else {
+					api[action]();
+				}
+			});
+
+			logEvents('onSetup event fired');
+		});
+
+		$player.on('started', function() {
+			logEvents('started event fired');
+		})
+		.on('paused', function() {
+			logEvents('paused event fired');
+		})
+		.on('ended', function() {
+			logEvents('ended event fired');
+		})
+		.on('onItemChange', function() {
+			logEvents('onItemChange event fired');
+		});
+
+		function logEvents(text) {
+			$log.val(function(i, val) {
+				return val + '\r\n\n' + text;
+			});
+
+			$log.scrollTop( $log[0].scrollHeight - $log.height() );
+		}
+
+	</script>
+</body>
+</html>

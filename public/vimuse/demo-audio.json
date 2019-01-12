@@ -1,0 +1,35 @@
+[
+     {
+     "track": "Vakning að elska",
+     "album": "Soundtrack for Life",
+     "artist": "Misha Mishenko",
+     "type": "audio",
+     "mp3": "media/audio/Misha Mishenko - Vakning.mp3",
+     "lyrics": "media/audio/dummy-lyrics.txt"
+     },
+
+     {
+     "track": "'Summer' in G minor - 3 Presto",
+     "album": "Le Quattro Stagioni",
+     "artist": "Vivaldi",
+     "type": "audio",
+     "mp3": "media/audio/Vivaldi - Summer - Presto.mp3"
+     },
+
+     {
+     "track": "La polvere e l'incanto",
+     "album": "Viandanze",
+     "artist": "Fabrizio Paterlini",
+     "type": "audio",
+     "mp3": "media/audio/Fabrizio Paterlini - La polvere e l'incanto.mp3",
+     "poster": "http://a5.mzstatic.com/us/r30/Music/22/cf/4a/mzi.syvauglj.600x600-75.jpg"
+     },
+
+     {
+     "track": "Brandenburg concerto 2 - Allegro-Andante-Allegro assai",
+     "album": "Brandenburg concerto 2",
+     "artist": "Bach",
+     "type": "audio",
+     "mp3": "media/audio/Bach - Brandenburg concerto n.2 - Allegro-Andante-Allegro assai.mp3"
+     }
+]

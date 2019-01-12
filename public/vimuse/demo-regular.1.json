@@ -1,0 +1,50 @@
+[
+     {
+          "title": "HTML5 Video",
+          "type": "video",
+          "free": true,
+          "downloadName": "sample-video.mp4",
+          "mp4": "media/video/birds.mp4",
+          "webm": "media/video/birds.webm",
+          "ogv": "media/video/birds.ogv",
+          "poster": "media/video/birds.jpg",
+          "url": "http://google.com"
+     },
+
+     {
+          "title": "Youtube Video - Earth Zoom To The Milky Way Galaxy",
+          "type": "youtube",
+          "link": "https://www.youtube.com/watch?v=sm-ucbDVyRU"
+     },
+
+     {
+     "title": "Vimeo Video - The Life of Flowers",
+     "type": "vimeo",
+     "link": "https://vimeo.com/27920977"
+     },
+
+     {
+     "title": "Dailymotion Video - Paperman",
+     "type": "dailymotion",
+     "link": "https://dai.ly/xzt3vb"
+     },
+
+     {
+     "track": "La polvere e l'incanto",
+     "album": "Viandanze",
+     "artist": "Fabrizio Paterlini",
+     "type": "audio",
+     "free": true,
+     "mp3": "media/audio/Fabrizio Paterlini - La polvere e l'incanto.mp3",
+     "poster": "http://a5.mzstatic.com/us/r30/Music/22/cf/4a/mzi.syvauglj.600x600-75.jpg",
+     "purchase": "http://codecanyon.net"
+     },
+
+     {
+     "title": "Shoutcast",
+     "type": "radio",
+     "radioType": "shoutcast",
+     "link": "http://94.23.252.14:8786/;",
+     "poster": ""
+     }
+]
