@@ -43,8 +43,8 @@ class AtMost extends CountValidatorAbstract
             $exception->setMock($this->_expectation->getMock())
                 ->setMethodName((string) $this->_expectation)
                 ->setExpectedCountComparative('<=')
-                ->setExpectedcount($this->_limit)
-                ->setActualcount($n);
+                ->setExpectedCount($this->_limit)
+                ->setActualCount($n);
             throw $exception;
         }
     }

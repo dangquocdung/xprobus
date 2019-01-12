@@ -38,7 +38,7 @@ class ArrayCountToken implements TokenInterface
      */
     public function scoreArgument($argument)
     {
-        return $this->isCountable($argument) && $this->hasPropercount($argument) ? 6 : false;
+        return $this->isCountable($argument) && $this->hasProperCount($argument) ? 6 : false;
     }
 
     /**
@@ -79,7 +79,7 @@ class ArrayCountToken implements TokenInterface
      *
      * @return bool
      */
-    private function hasPropercount($argument)
+    private function hasProperCount($argument)
     {
         return $this->count === count($argument);
     }

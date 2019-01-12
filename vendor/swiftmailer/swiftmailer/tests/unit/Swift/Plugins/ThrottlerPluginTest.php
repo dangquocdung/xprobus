@@ -76,7 +76,7 @@ class Swift_Plugins_ThrottlerPluginTest extends \SwiftMailerTestCase
         return $this->getMockery('Swift_Plugins_Timer');
     }
 
-    private function createMessageWithBytecount($bytes)
+    private function createMessageWithByteCount($bytes)
     {
         $msg = $this->getMockery('Swift_Mime_SimpleMessage');
         $msg->shouldReceive('toByteStream')

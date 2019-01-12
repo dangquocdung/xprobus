@@ -168,7 +168,7 @@ class CronExpression
      *
      * @return CronExpression
      */
-    public function setMaxIterationcount($maxIterationCount)
+    public function setMaxIterationCount($maxIterationCount)
     {
         $this->maxIterationCount = $maxIterationCount;
 

@@ -35,14 +35,14 @@ class TranslationDumperPassTest extends TestCase
     {
         $container = new ContainerBuilder();
 
-        $definitionsBefore = count($container->getDefinitions());
-        $aliasesBefore = count($container->getAliases());
+        $definitionsBefore = \count($container->getDefinitions());
+        $aliasesBefore = \count($container->getAliases());
 
         $translationDumperPass = new TranslationDumperPass();
         $translationDumperPass->process($container);
 
         // the container is untouched (i.e. no new definitions or aliases)
-        $this->assertcount($definitionsBefore, $container->getDefinitions());
-        $this->assertcount($aliasesBefore, $container->getAliases());
+        $this->assertCount($definitionsBefore, $container->getDefinitions());
+        $this->assertCount($aliasesBefore, $container->getAliases());
     }
 }

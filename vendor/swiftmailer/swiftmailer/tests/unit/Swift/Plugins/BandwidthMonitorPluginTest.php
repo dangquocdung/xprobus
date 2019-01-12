@@ -105,16 +105,16 @@ class Swift_Plugins_BandwidthMonitorPluginTest extends \PHPUnit\Framework\TestCa
         return $evt;
     }
 
-    private function createMessageWithBytecount($bytes)
+    private function createMessageWithByteCount($bytes)
     {
         $this->bytes = $bytes;
         $msg = $this->getMockBuilder('Swift_Mime_SimpleMessage')->disableOriginalConstructor()->getMock();
         $msg->expects($this->any())
             ->method('toByteStream')
-            ->will($this->returnCallback(array($this, 'write')));
-      /*  $this->checking(Expectations::create()
-            -> ignoring($msg)->toByteStream(any()) -> calls(array($this, 'write'))
-        ); */
+            ->will($this->returnCallback([$this, 'write']));
+        /*  $this->checking(Expectations::create()
+              -> ignoring($msg)->toByteStream(any()) -> calls(array($this, 'write'))
+          ); */
 
         return $msg;
     }

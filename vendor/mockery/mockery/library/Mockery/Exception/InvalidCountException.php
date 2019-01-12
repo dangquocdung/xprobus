@@ -47,13 +47,13 @@ class InvalidCountException extends Mockery\CountValidator\Exception
         return $this;
     }
 
-    public function setActualcount($count)
+    public function setActualCount($count)
     {
         $this->actual = $count;
         return $this;
     }
 
-    public function setExpectedcount($count)
+    public function setExpectedCount($count)
     {
         $this->expected = $count;
         return $this;

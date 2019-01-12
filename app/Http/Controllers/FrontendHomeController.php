@@ -222,16 +222,7 @@ class FrontendHomeController extends Controller
         // view()->share('MainMenuLinks',$MainMenuLinks);
         // view()->share('ThoiSuMenuLinks',$ThoiSuMenuLinks);
     }
-
-    public function getTruyenHinh()
-    {
-        return view("httv.live.truyen-hinh");
-    }
-
-    public function getTruyenHinh2()
-    {
-        return view("httv.truyen-hinh-2");
-    }
+    
 
     /**
      * Show the form for editing the specified resource.
@@ -334,21 +325,9 @@ class FrontendHomeController extends Controller
      */
     public function HomePage()
     {
-        // ini_set('max_execution_time', 120);
-
-        // $Topics= Topic::where('seo_url_slug_vi',null)->limit(10000)->get();
-
-        // foreach ($Topics as $Topic){
-
-        //     $Topic->seo_url_slug_vi = str_slug($Topic->title_vi);
-
-        //     $Topic->save();
-
-        // }
-
+        
         return $this->HomePageByLang("");
 
-        // return response()->json(public_path());
     }
 
     /**
@@ -396,7 +375,7 @@ class FrontendHomeController extends Controller
         $PageDescription = $WebsiteSettings->$site_desc_var;
         $PageKeywords = $WebsiteSettings->$site_keywords_var;
 
-        return view('httv.home',
+        return view('xpro.home',
             compact("PageTitle",
                     "PageDescription",
                     "PageKeywords",
@@ -568,7 +547,7 @@ class FrontendHomeController extends Controller
 
             // return response()->json([$Categories]);
 
-            return view("httv.topics",
+            return view("xpro.topics",
                 compact("WebmasterSection",
                     "Categories",
                     "Topics",
@@ -754,7 +733,7 @@ class FrontendHomeController extends Controller
 
             // return response()->json([$Categories]);
 
-            return view("httv.topics",
+            return view("xpro.topics",
                 compact("WebsiteSettings",
                     "WebmasterSettings",
                     "HeaderMenuLinks",
@@ -953,7 +932,7 @@ class FrontendHomeController extends Controller
                 }
                 // .. end of .. Page Title, Description, Keywords
 
-                return view("httv.topic",
+                return view("xpro.topic",
                     compact("WebsiteSettings",
                         "WebmasterSettings",
                         "HeaderMenuLinks",
@@ -1218,7 +1197,7 @@ class FrontendHomeController extends Controller
 
             // Send all to the view
 
-            return view("httv.topics",
+            return view("xpro.topics",
                 compact("WebmasterSection",
                     "Categories",
                     "Topics",
@@ -1483,7 +1462,7 @@ class FrontendHomeController extends Controller
 
     public function getPhatThanh()
     {
-        return view("httv.live.phat-thanh");
+        return view("xpro.live.phat-thanh");
     }
 
     /**
@@ -1841,7 +1820,7 @@ class FrontendHomeController extends Controller
 
     public function lps()
     {
-        return view("httv.lps");
+        return view("xpro.lps");
     }
 
 
