@@ -21,7 +21,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<img src="http://placehold.it/973x476" alt="" class="align-center" />
+				@if (!empty($AboutUsBanner))
+					<img src="/uploads/banners/{{ $AboutUsBanner->file_vi }}" alt="{{ $AboutUsBanner->title_vi }}" class="align-center">
+				@else
+					<img src="http://placehold.it/973x476" alt="" class="align-center" />
+				@endif
 			</div>
 		</div>
 
