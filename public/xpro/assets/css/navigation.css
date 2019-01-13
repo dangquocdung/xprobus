@@ -16,7 +16,6 @@
     box-sizing: border-box;
 }
 
-
     .navigation:after,
     .navigation > ul:after {
         content: ".";
@@ -111,13 +110,13 @@
     font-weight:500;
     font-size:12px;
     outline:none;
+    line-height: 1.5em;
 }
 .header.sticky .navigation ul ul li:hover >a, .header .navigation ul ul li:hover >a, .navigation ul ul li >a:hover,
 .header.sticky .navigation ul ul ul li:hover >a, .header .navigation ul ul ul li:hover >a, .navigation ul ul ul li >a:hover {
 	background: #19b5fe;
     color: #fff;
 }
-
 
 .navigation ul ul {
     position: absolute;
@@ -188,8 +187,6 @@
     transition: color .2s ease;
 }
 
-    
-
 .navigation ul ul li.nav-has-sub > a::after {
     position: absolute;
     top: 13px;
@@ -219,7 +216,6 @@
     
 }
 
-
 .navigation ul .home-nav li a{
 	width:auto;
 }
@@ -240,7 +236,6 @@
     .navigation {
         width: auto;
         margin-left: 0px;
-        
         
     }
 
@@ -328,8 +323,6 @@
        padding:20px 20px 20px 45px;
     }
         
-            
-
         .navigation ul ul ul li a {
             padding-left: 40px;
         }
@@ -365,7 +358,6 @@
         float:left;
     }
 
-   
     .navigation .submenu-button {
         position: absolute;
         z-index: 10;
