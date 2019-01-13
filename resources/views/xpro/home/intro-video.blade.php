@@ -15,7 +15,7 @@
 	<div class="full-cap-wraper">
 		<div class="content-caption light-color">
 			<div class="container">
-				<h2 class="font-s">We make <span class="text-color"> Awesome </span> Website</h2>
+				<h2 class="font-s">We make <span class="text-color"> Awesome </span> products</h2>
 				<p class="paragraph-s pb-30 pt-10">
                     We build, host and manage awesome websites for your awesome business
 				</p>
