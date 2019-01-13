@@ -38,7 +38,7 @@
 	<style>
 
 		.image_cover{
-			background-image:url('/uploads/banners/{{ $WhyUsBanner->file_vi }}')' !important;
+			background-image:url('/uploads/banners/{{ $WhyUsBanner->file_vi }}') !important;
 		}
 
 	</style>		
