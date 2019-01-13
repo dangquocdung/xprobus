@@ -78,6 +78,9 @@ class FrontendHomeController extends Controller
         $HeaderMenuLinks = Menu::where('father_id', $WebmasterSettings->header_menu_id)->where('status',1)->orderby('row_no','asc')->get();
 
         $AboutUsBanner = Banner::where('section_id', 6)->where('status',1)->first();
+
+        $WhyUsBanner = Banner::where('section_id', 7)->where('status',1)->first();
+
         
         // Get Home page slider banners
         // $TopBanners = Banner::where('section_id', 5)->where('status',1)->orderby('row_no', 'asc')->get();
@@ -91,6 +94,8 @@ class FrontendHomeController extends Controller
         view()->share('WebsiteSettings',$WebsiteSettings);
         view()->share('HeaderMenuLinks',$HeaderMenuLinks);
         view()->share('AboutUsBanner',$AboutUsBanner);
+        view()->share('WhyUsBanner',$WhyUsBanner);
+
         // view()->share('FeatureMenuLinks',$FeatureMenuLinks);
         // view()->share('MainMenuLinks',$MainMenuLinks);
         // view()->share('ThoiSuMenuLinks',$ThoiSuMenuLinks);
