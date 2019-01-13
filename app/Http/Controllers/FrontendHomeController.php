@@ -83,6 +83,10 @@ class FrontendHomeController extends Controller
 
         $TeamBanners = Banner::where('section_id', 8)->where('status',1)->orderby('row_no','asc')->get();
 
+        $QouteBanner = Banner::where('section_id', 9)->where('status',1)->first();
+
+        $ParallaxBanner = Banner::where('section_id', 10)->where('status',1)->first();
+
 
         
         // Get Home page slider banners
@@ -99,6 +103,8 @@ class FrontendHomeController extends Controller
         view()->share('AboutUsBanner',$AboutUsBanner);
         view()->share('WhyUsBanner',$WhyUsBanner);
         view()->share('TeamBanners',$TeamBanners);
+        view()->share('QouteBanner',$QouteBanner);
+        view()->share('ParallaxBanner',$ParallaxBanner);
 
 
         // view()->share('FeatureMenuLinks',$FeatureMenuLinks);

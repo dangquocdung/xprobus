@@ -573,6 +573,17 @@
 
 <!-- Pricing Table End-->
 <!-- Get a Qoute -->
+
+@if (!empty($QouteBanner))
+
+	<style>
+
+		.parallax {
+			background: url('/uploads/banners/{{ $WhyUsBanner->file_vi }}') no-repeat;
+		}
+
+	</style>		
+@endif
 <section class="get-qoute padding ptb-xs-60 parallax overlay-dark">
 	<div class="container">
 		<div class="row text-center pb-30">
@@ -673,6 +684,16 @@
 </section>
 <!-- Testimonial -->
 <!--Overlay Block -->
+@if (!empty($ParallaxBanner))
+
+	<style>
+
+		#overlay_block, .bg_img {
+			background: url('/uploads/banners/{{ $ParallaxBanner->file_vi }}') no-repeat;
+		}
+
+	</style>		
+@endif
 <section class="padding ptb-xs-60 light-color parallax bg_img">
 	<div class="container text-center padding ptb-xs-60">
 		<div class="creative_heading light-color">
