@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="xpro/assets/rs-slider/rs-plugin/css/settings.css">
     <link rel="stylesheet" type="text/css" href="xpro/assets/css/rev-style.css">
     <!--Main Style-->
-    <link href="xpro/assets/css/navigation.css" rel="stylesheet" type="text/css">
-    <link href="xpro/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ mix('xpro/assets/css/style.css') }}">
+
 
 </head>
