@@ -77,147 +77,20 @@ class FrontendHomeController extends Controller
 
         $HeaderMenuLinks = Menu::where('father_id', $WebmasterSettings->header_menu_id)->where('status',1)->orderby('row_no','asc')->get();
 
-        $LienKetNhanhs = Menu::where('father_id', 246)->where('status',1)->orderby('row_no','asc')->get();
-
-        $HeadBanners = Banner::where('section_id', 5)->where('status',1)->orderby('row_no', 'asc')->get();
-
-        //Lịch phát sóng
-        $Lth = Lps::where('section_id',1)->orderby('ngay_ps','desc')->limit(500)->get();
-        $Lpt = Lps::where('section_id',2)->orderby('ngay_ps','desc')->limit(200)->get();
-
-        // $Lpss=Lps::all();
-
-        // $FooterMenuLinks = Menu::where('father_id', $WebmasterSettings->footer_menu_id)->where('status',1)->orderby('row_no','asc')->get();
-
-        // $FeatureMenuLinks = Menu::where('father_id', $WebmasterSettings->feature_menu_id)->where('status',1)->orderby('row_no','asc')->get();
-
-        //Hot topics
-        $HotTopics = Topic::where([
-            ['status', 1],
-            ['hot', 1],
-            ['webmaster_id','<',10],
-            // ['webmaster_id', $WebmasterSettings->home_content1_section_id],
-            ['expire_date', '>=', date("Y-m-d")],
-            ['expire_date', '<>', null]
-            ])
-            ->orwhere([
-                ['status', 1],
-                ['hot', 1],
-                ['webmaster_id','<',10],
-                // ['webmaster_id', $WebmasterSettings->home_content1_section_id],
-                ['expire_date', null]
-                ])
-                ->orderby('id', 'desc')
-                ->limit(10)
-                ->get();
-
-        //Topic most viewed
-        $TopicsMostViewed = Topic::where([
-            ['status', 1],
-            ['webmaster_id','<',10],
-            // ['webmaster_id', $WebmasterSettings->home_content1_section_id],
-            ['expire_date', '>=', date("Y-m-d")],
-            ['expire_date', '<>', null]
-            ])
-            ->orwhere([
-                ['status', 1],
-                ['webmaster_id','<',10],
-                // ['webmaster_id', $WebmasterSettings->home_content1_section_id],
-                ['expire_date', null]
-                ])
-                ->orderby('visits', 'desc')
-                ->limit(10)
-                ->get();
-
-        $LatestNewsAll = Topic::where([
-            ['status', 1],
-            ['webmaster_id','<',10],
-            // ['webmaster_id', $WebmasterSettings->home_content1_section_id],
-            ['expire_date', '>=', date("Y-m-d")],
-            ['expire_date', '<>', null]
-            ])
-            ->orwhere([
-                ['status', 1],
-                ['webmaster_id','<',10],
-                // ['webmaster_id', $WebmasterSettings->home_content1_section_id],
-                ['expire_date', null]
-                ])
-                ->orderby('id', 'desc')
-                ->limit(5)
-                ->get();
-
-        //Video Hot
-        $HotVideos = Topic::where([
-            ['status', 1],
-            ['hot',1],
-            ['webmaster_id','>',11],
-            ['expire_date', '>=', date("Y-m-d")],
-            ['expire_date', '<>', null]
-            ])
-            ->orwhere([
-                ['status', 1],
-                ['hot',1],
-                ['webmaster_id','>', 11],
-                ['expire_date', null]
-                ])
-                ->orderby('id', 'desc')
-                ->limit(7)
-                ->get();
+        $AboutUsBanner = Banner::where('section_id', 6)->where('status',1)->first();
         
-
-        //Video topics
-        $VideoTopics = Topic::where([
-            ['status', 1],
-            ['webmaster_id','>',11],
-            ['expire_date', '>=', date("Y-m-d")],
-            ['expire_date', '<>', null]
-            ])
-            ->orwhere([
-                ['status', 1],
-                ['webmaster_id','>', 11],
-                ['expire_date', null]
-                ])
-                ->orderby('id', 'desc')
-                ->limit(7)
-                ->get();
-
-
         // Get Home page slider banners
         // $TopBanners = Banner::where('section_id', 5)->where('status',1)->orderby('row_no', 'asc')->get();
 
         //Side Banner
         // $SideBanners = Banner::where('section_id', $WebmasterSettings->side_banners_section_id)->where('status',1)->orderby('row_no', 'asc')->get();
-
-        $Visitors = AnalyticsVisitor::count() + 5895193;
-        $Pages = AnalyticsPage::count() + 27251968;
-
-        $TodayVisitors = AnalyticsVisitor::where('date', date('Y-m-d'))->count();
-        $TodayPages = AnalyticsPage::where('date', date('Y-m-d'))->count();
+       
         
 
         view()->share('WebmasterSettings',$WebmasterSettings);
         view()->share('WebsiteSettings',$WebsiteSettings);
         view()->share('HeaderMenuLinks',$HeaderMenuLinks);
-        // view()->share('FooterMenuLinks',$FooterMenuLinks);
-        // view()->share('RightMenuLinks',$RightMenuLinks);
-        // view()->share('TapChiMenuLinks',$TapChiMenuLinks);
-        // view()->share('MarqueeTopics',$MarqueeTopics);
-        view()->share('LatestNewsAll',$LatestNewsAll);
-        view()->share('HotTopics',$HotTopics);
-        view()->share('TopicsMostViewed',$TopicsMostViewed);
-        view()->share('VideoTopics',$VideoTopics);
-        view()->share('HotVideos',$HotVideos);
-
-        view()->share('HeadBanners',$HeadBanners);
-        view()->share('LienKetNhanhs',$LienKetNhanhs);
-        // view()->share('SideBanners',$SideBanners);
-        view()->share('Lth',$Lth);
-        view()->share('Lpt',$Lpt);
-
-        view()->share('Visitors',$Visitors);
-        view()->share('Pages',$Pages);
-        view()->share('TodayVisitors',$TodayVisitors);
-        view()->share('TodayPages',$TodayPages);
+        view()->share('AboutUsBanner',$AboutUsBanner);
         // view()->share('FeatureMenuLinks',$FeatureMenuLinks);
         // view()->share('MainMenuLinks',$MainMenuLinks);
         // view()->share('ThoiSuMenuLinks',$ThoiSuMenuLinks);
