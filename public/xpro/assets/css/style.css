@@ -131,6 +131,7 @@
   font-weight: 500;
   font-size: 12px;
   outline: none;
+  line-height: 1.5em;
 }
 
 .header.sticky .navigation ul ul li:hover > a,
