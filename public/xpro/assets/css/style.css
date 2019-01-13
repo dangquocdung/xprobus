@@ -6949,7 +6949,7 @@ a.btn.xplus-btn.pricing:hover {
 }
 
 .image_cover {
-  background-image: url(http://placehold.it/1920x1280);
+  background-image: url("http://placehold.it/1920x1280");
   background-size: cover;
   display: block;
   position: absolute;

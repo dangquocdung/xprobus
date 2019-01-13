@@ -33,11 +33,18 @@
 </section>
 <!--About Us End -->
 <section id="choose_us" class="padding pt-xs-60 overflow_hidden secondary_bg">
-	@if (!empty($AboutUsBanner))
-		<div class="image_cover image_cover_right" style="background-image:url('/uploads/banners/{{ $WhyUsBanner->file_vi }}')' !important"></div>
-	@else
-		<div class="image_cover image_cover_right"></div>
+	@if (!empty($WhyUsBanner))
+
+	<style>
+
+		.image_cover{
+			background-image:url('/uploads/banners/{{ $WhyUsBanner->file_vi }}')' !important;
+		}
+
+	</style>		
 	@endif
+
+	<div class="image_cover image_cover_right"></div>
 	<!-- half image background element -->
 	<div class="container">
 		<div class="row">
