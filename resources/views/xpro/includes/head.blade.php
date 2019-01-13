@@ -1,6 +1,13 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Xpro Bussiness - Corporate, Agency Business HTML5 Template</title>
+    <title>{{$PageTitle}} {{($PageTitle !="")? "|":""}} {{ Helper::GeneralSiteSettings("site_title_" . trans('backLang.boxCode')) }}</title>
+    <meta name="description" content="{{$PageDescription}}"/>
+    <meta name="keywords" content="{{$PageKeywords}}"/>
+    <meta name="author" content="Dang Quoc Dung"/>
+
+    @yield('meta')
+
+    <base href="{{asset('')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
