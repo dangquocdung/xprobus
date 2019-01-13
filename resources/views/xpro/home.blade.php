@@ -582,6 +582,13 @@
 			background: url('/uploads/banners/{{ $QouteBanner->file_vi }}') no-repeat;
 		}
 
+		.parallax, #overlay_block, .inner-intro {
+			background-size: cover;
+			width: 100%;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+
 	</style>		
 @endif
 <section class="get-qoute padding ptb-xs-60 parallax overlay-dark">
