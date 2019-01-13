@@ -91,7 +91,6 @@
 
 			</div>
 			
-
 		</div>
 	</div>
 
@@ -108,130 +107,50 @@
 
 			</div>
 		</div>
-		<div class="row text-center">
-			<div class="col-md-3 col-sm-6 mb-xs-30 mb-sm-30 ">
-				<div class="box-hover img-scale">
-					<figure>
-						<img src="http://placehold.it/600x800" alt="">
-					</figure>
-
-					<div class="team-block">
-						<strong>Tommy Woodhouse</strong>
-						<span>Sales Manager</span>
-						<hr class="small-divider border-white">
-						<ul class="social-icons">
-							<li>
-								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-							</li>
-						</ul>
+		@if (!empty($TeamBanners))
+			<div class="row text-center">
+				@foreach($TeamBanners as $team)
+					<div class="col-md-3 col-sm-6 mb-xs-30 mb-sm-30 ">
+						<div class="box-hover img-scale">
+							<figure>
+		
+								@if ($team->file_vi != null && file_exists('uploads/banners/'.$team->file_vi))
+									<img src="/uploads/banners/{{ $team->file_vi }}" alt="{{ $team->title_vi }}">
+								@else
+									<img src="http://placehold.it/600x800" alt="">
+		
+								@endif
+							</figure>
+		
+							<div class="team-block">
+								{!! $team->details_vi !!}
+								<hr class="small-divider border-white">
+								<ul class="social-icons">
+									<li>
+										<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+									</li>
+								</ul>
+							</div>
+		
+						</div>
 					</div>
-
-				</div>
+				@endforeach
 			</div>
-			<div class="col-md-3 col-sm-6 mb-xs-30 mb-sm-30">
-				<div class="box-hover img-scale">
-					<figure>
-						<img src="http://placehold.it/600x800" alt="">
-					</figure>
-
-					<div class="team-block">
-						<strong>Danny Burton</strong>
-						<span>Senior Designer</span>
-						<hr class="small-divider border-white">
-						<ul class="social-icons">
-							<li>
-								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 mb-xs-30 ">
-				<div class="box-hover img-scale">
-					<figure>
-						<img src="http://placehold.it/600x800" alt="">
-					</figure>
-
-					<div class="team-block">
-						<strong>Melody Clark</strong>
-						<span>UX Specialist</span>
-						<hr class="small-divider border-white">
-						<ul class="social-icons">
-							<li>
-								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 mb-xs-30 ">
-				<div class="box-hover img-scale">
-					<figure>
-						<img src="http://placehold.it/600x800" alt="">
-					</figure>
-
-					<div class="team-block">
-						<strong>Elizabeth Jones</strong>
-						<span>Art Director</span>
-						<hr class="small-divider border-white">
-						<ul class="social-icons">
-							<li>
-								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+			
+		@endif
+		
 
 	</div>
 </section>
