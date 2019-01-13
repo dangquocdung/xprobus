@@ -579,7 +579,7 @@
 	<style>
 
 		.parallax {
-			background: url('/uploads/banners/{{ $WhyUsBanner->file_vi }}') no-repeat;
+			background: url('/uploads/banners/{{ $QuoteBanner->file_vi }}') no-repeat;
 		}
 
 	</style>		
