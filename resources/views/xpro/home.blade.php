@@ -34,7 +34,7 @@
 <!--About Us End -->
 <section id="choose_us" class="padding pt-xs-60 overflow_hidden secondary_bg">
 	@if (!empty($AboutUsBanner))
-		<div class="image_cover image_cover_right" style="background-image:/uploads/banners/{{ $WhyUsBanner->file_vi }}"></div>
+		<div class="image_cover image_cover_right" style="background-image:url('/uploads/banners/{{ $WhyUsBanner->file_vi }}')' !important"></div>
 	@else
 		<div class="image_cover image_cover_right"></div>
 	@endif
