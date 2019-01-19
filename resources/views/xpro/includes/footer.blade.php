@@ -6,14 +6,14 @@
                             <div class="col-md-3 col-sm-4 col-xs-12 mb-sm-30">
                                 <h4 class="mb-30">CONTACT Us</h4>
                                 <address>
-                                    <i class="ion-ios-location fa-icons"></i> 123 Main Street, St. NW Ste, 1 Washington, DC,USA.
+                                    <i class="ion-ios-location fa-icons"></i> {{ $WebsiteSettings->contact_t1_vi }}
                                 </address>
                                 <ul class="link-small">
                                     <li>
-                                        <a href="mailto:business@support.com"><i class="ion-ios-email fa-icons"></i>business@support.com</a>
+                                        <a href="mailto:{{ $WebsiteSettings->contact_t6 }}"><i class="ion-ios-email fa-icons"></i>{{ $WebsiteSettings->contact_t6 }}</a>
                                     </li>
                                     <li>
-                                        <a><i class="ion-ios-telephone fa-icons"></i>+56 (0) 012 345 6789</a>
+                                        <a><i class="ion-ios-telephone fa-icons"></i>{{ $WebsiteSettings->contact_t3 }}</a>
                                     </li>
                                 </ul>
                                 <div class="icons-hover-black">
@@ -101,7 +101,7 @@
                     <div class="copyright">
                         <div class="container">
                             <p>
-                                © 2017 <a>Xpro Bussiness - Corporate, Agency Business HTML5 Template</a>. All Rights Reserved.
+                                © 2018 <a>{{ $WebsiteSettings->site_title_vi }}</a>. All Rights Reserved.
                             </p>
                         </div>
                     </div>
