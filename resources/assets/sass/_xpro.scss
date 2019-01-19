@@ -1,0 +1,19 @@
+.header {
+    .logo{
+        a{
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+	
+    .header {
+        .logo{
+            a{
+                width: 120px;
+                margin-top: 15px;
+            }
+        }
+    }
+}

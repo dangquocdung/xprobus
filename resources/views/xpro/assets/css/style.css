@@ -840,7 +840,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, in
 .header .logo a {
 	position: relative;
 	display: block;
-	width: 100px;
+	width: 150px;
 	margin-top: 22px;
 }
 .header.sticky .logo a {
@@ -1918,7 +1918,6 @@ body .featured-item.sub-color_hover:hover {
 /* Blog   --------------------------------------------------------- */
 /* ----------------------------------------------------------------------*/
 
-
 /*** 
 
 ====================================================================
@@ -2248,7 +2247,6 @@ body .featured-item.sub-color_hover:hover {
 .blog-details .contact-content .contact-form textarea {
     height: 221px;
 }
-
 
 /*** 
 
@@ -7362,7 +7360,6 @@ ul.tags li {
 		font-size: 36px;
 	}
 }
-
 
 /* ----------------------------------------------------------------------*/
 /* Sidebar Widget   ---------------------------------------------------- */
