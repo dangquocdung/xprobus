@@ -1,10 +1,20 @@
 
-@extends('xpro.layout')
+@extends('xpro.layout-2')
 
 @section('body')
 
-	<!--  Main Banner Start Here-->
-	@include('xpro.home.intro-video')
+	<!-- Intro Section -->
+	<section class="inner-intro  padding bg-img1 overlay-dark light-color">
+		<div class="container">
+			<div class="row title">
+				<h1>Contact</h1>
+				<div class="page-breadcrumb">
+					<a>Home</a>/<span>Contact</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Intro Section -->
 
 	<!-- Contact Section -->
 	<section class="padding ptb-xs-60">
