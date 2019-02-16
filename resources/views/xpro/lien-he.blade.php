@@ -108,10 +108,16 @@
 	<!-- Contact Section -->
 
 
+	
+
+@stop
+
+@section('script')
 	<script>
 		$(document).ready(function(){
 			$(".header").addClass("sticky");
 		})
 	</script>
-
 @stop
+	
+@endsection

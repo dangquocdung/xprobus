@@ -28,3 +28,5 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&.js"></script>
 <!-- custom Js -->
 <script src="xpro/assets/js/custom.js" type="text/javascript"></script>
+
+@yield('script')
