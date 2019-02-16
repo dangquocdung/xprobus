@@ -110,14 +110,12 @@
 
 	
 
-@stop
+@endsection
 
 @section('script')
 	<script>
 		$(document).ready(function(){
 			$(".header").addClass("sticky");
 		})
-	</script>
-@stop
-	
+	</script>	
 @endsection
