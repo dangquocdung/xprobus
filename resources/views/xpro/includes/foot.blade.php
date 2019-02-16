@@ -23,5 +23,8 @@
 <script type="text/javascript" src="xpro/assets/rs-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="xpro/assets/rs-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script type="text/javascript" src="xpro/assets/js/revolution-custom.js"></script>
+
+<!-- Map api Js -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&.js"></script>
 <!-- custom Js -->
 <script src="xpro/assets/js/custom.js" type="text/javascript"></script>
