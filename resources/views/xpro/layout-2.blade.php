@@ -10,19 +10,19 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<!-- CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800%7CLato:300,400,700" rel="stylesheet" type="text/css">
-		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/ionicons.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/ionicons.css" rel="stylesheet" type="text/css">
 		<!-- carousel -->
-		<link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
 		<!--Light box-->
-		<link href="assets/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
 		<!-- Revolution Style-sheet -->
-		<link rel="stylesheet" type="text/css" href="assets/rs-slider/rs-plugin/css/settings.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/rev-style.css">
+		<link rel="stylesheet" type="text/css" href="/xpro/assets/rs-slider/rs-plugin/css/settings.css">
+		<link rel="stylesheet" type="text/css" href="/xpro/assets/css/rev-style.css">
 		<!--Main Style-->
-		<link href="assets/css/navigation.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/navigation.css" rel="stylesheet" type="text/css">
+		<link href="/xpro/assets/css/style.css" rel="stylesheet" type="text/css">
 
 	</head>
 	<body class="full-intro inner-header">
@@ -233,7 +233,7 @@
 			<!-- CONTENT -->
             
             @yield('content')
-            
+
 			<!-- FOOTER -->
 			<footer class="footer pt-80 pt-xs-60">
 				<div class="container">
