@@ -383,8 +383,8 @@ Route::post('/comment', 'FrontendHomeController@commentSubmit')->name('commentSu
 // ../Order submit  (ajax url)
 Route::post('/order', 'FrontendHomeController@orderSubmit')->name('orderSubmit');
 // ..Custom URL for contact us page ( www.site.com/contact )
-Route::get('/contact', 'FrontendHomeController@ContactPage')->name('contactPage');
-Route::get('/{lang?}/contact', 'FrontendHomeController@ContactPageByLang')->name('contactPageByLang');
+Route::get('/lien-he', 'FrontendHomeController@ContactPage')->name('contactPage');
+Route::get('/{lang?}/lien-he', 'FrontendHomeController@ContactPageByLang')->name('contactPageByLang');
 
 // ..Custom URL for contact us page ( www.site.com/contact )
 Route::get('/page/{id}', 'FrontendHomeController@PageView');
