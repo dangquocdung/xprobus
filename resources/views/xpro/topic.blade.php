@@ -1,7 +1,7 @@
 ﻿
 @extends('xpro.layout-2')
 
-@section('body')
+@section('content')
 
 	<!-- Intro Section -->
 	<section class="inner-intro  padding bg-img1 overlay-dark light-color">
