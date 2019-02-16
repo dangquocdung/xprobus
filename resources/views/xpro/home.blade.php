@@ -170,65 +170,6 @@
 
 </section>
 
-<!--Team Section-->
-<section id="team" class="padding ptb-xs-60">
-	<div class="container">
-		<div class="row pb-30 text-center">
-			<div class="col-sm-12 mb-20">
-				<div class="creative_heading">
-					<h2>Team</h2>
-				</div>
-
-			</div>
-		</div>
-		@if (!empty($TeamBanners))
-			<div class="row text-center">
-				@foreach($TeamBanners as $team)
-					<div class="col-md-3 col-sm-6 mb-xs-30 mb-sm-30 ">
-						<div class="box-hover img-scale">
-							<figure>
-		
-								@if ($team->file_vi != null && file_exists('uploads/banners/'.$team->file_vi))
-									<img src="/uploads/banners/{{ $team->file_vi }}" alt="{{ $team->title_vi }}">
-								@else
-									<img src="http://placehold.it/600x800" alt="">
-		
-								@endif
-							</figure>
-		
-							<div class="team-block">
-								{!! $team->details_vi !!}
-								<hr class="small-divider border-white">
-								<ul class="social-icons">
-									<li>
-										<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-									</li>
-								</ul>
-							</div>
-		
-						</div>
-					</div>
-				@endforeach
-			</div>
-			
-		@endif
-		
-
-	</div>
-</section>
-<!--Team Section End-->
 
 
 <!-- Work Section -->
