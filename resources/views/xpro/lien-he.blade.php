@@ -3,8 +3,11 @@
 
 @section('body')
 
-<!-- Contact Section -->
-<section class="padding ptb-xs-60">
+	<!--  Main Banner Start Here-->
+	@include('xpro.home.intro-video')
+
+	<!-- Contact Section -->
+	<section class="padding ptb-xs-60">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
@@ -91,7 +94,7 @@
 			</div>
 		</div>
 	</div>
-</section>
-<!-- Contact Section -->
+	</section>
+	<!-- Contact Section -->
 
 @stop
