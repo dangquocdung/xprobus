@@ -542,41 +542,51 @@
 	</style>		
 @endif
 <section class="get-qoute padding ptb-xs-60 parallax overlay-dark">
-	<div class="container">
-		<div class="row text-center pb-30">
-			<div class="col-sm-12">
-				<div class="creative_heading light-color">
-					<h2>Get a Qoute</h2>
-				</div>
-
-			</div>
-		</div>
+	<div class="container text-center">
 		<div class="row">
-			<div class="col-sm-4 mb-30">
-				<div class="form-field">
-					<input class="input-lg form-full" id="name" type="text" name="form-name" placeholder="Your Name">
+			<div class="col-sm-3">
+				<div class="single-fact">
+					<div class="icon-boxed">
+						<i class="ion-ios-albums-outline"></i>
+					</div>
+					<span class="counter" data-count="3562">0</span>
+					<p>
+						Projects Finished
+					</p>
 				</div>
 			</div>
-			<div class="col-sm-4 mb-30">
-				<div class="form-field">
-					<input class="input-lg form-full" id="email" type="text" name="form-email" placeholder="Email">
+			<div class="col-sm-3">
+				<div class="single-fact">
+					<div class="icon-boxed">
+						<i class="ion-social-reddit-outline"></i>
+					</div>
+					<span class="counter" data-count="1054">0</span>
+					<p>
+						Happy Clients
+					</p>
 				</div>
 			</div>
-			<div class="col-sm-4 mb-30">
-				<div class="form-field">
-					<input class="input-lg form-full" id="sub" type="text" name="form-subject" placeholder="Subject">
+			<div class="col-sm-3">
+				<div class="single-fact">
+					<div class="icon-boxed">
+						<i class="ion-ios-people-outline"></i>
+					</div>
+					<span class="counter" data-count="400">0</span>
+					<p>
+						Team
+					</p>
 				</div>
 			</div>
-
-			<div class="col-sm-12">
-				<div class="form-field">
-					<textarea class="form-full" id="message" rows="7" name="form-message" placeholder="Your Message"></textarea>
+			<div class="col-sm-3">
+				<div class="single-fact">
+					<div class="icon-boxed">
+						<i class="ion-ios-stopwatch-outline"></i>
+					</div>
+					<span class="counter" data-count="5685">0</span>
+					<p>
+						Hours of work
+					</p>
 				</div>
-			</div>
-			<div class="col-sm-12 mt-30 text-center">
-				<button class="btn-text" type="button" id="submit" name="button">
-					Send Message
-				</button>
 			</div>
 		</div>
 	</div>
