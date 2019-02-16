@@ -1,7 +1,7 @@
 
-@extends('xpro.layout')
+@extends('xpro.layout-2')
 
-@section('body')
+@section('content')
 
 	<!-- Intro Section -->
 	<section class="inner-intro  padding bg-img1 overlay-dark light-color">
@@ -107,15 +107,4 @@
 	</section>
 	<!-- Contact Section -->
 
-
-	
-
-@endsection
-
-@section('script')
-	<script>
-		$(document).ready(function(){
-			$(".header").addClass("sticky");
-		})
-	</script>	
 @endsection

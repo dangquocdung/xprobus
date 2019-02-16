@@ -6,7 +6,6 @@
 	<!--  Main Banner Start Here-->
 	@include('xpro.home.intro-video')
 
-
 	<!--Our Services-->
 	<section id="our-services" class="padding ptb-xs-60 text-center">
 		<div class="container">
@@ -104,7 +103,6 @@
 		</div>
 	</section>
 	<!--Our Services End -->
-
 
 	<section id="choose_us" class="padding pt-xs-60 overflow_hidden secondary_bg">
 		@if (!empty($WhyUsBanner))
@@ -225,7 +223,6 @@
 				
 			@endif
 			
-
 		</div>
 	</section>
 	<!--Team Section End-->
@@ -538,7 +535,6 @@
 				background: url('/uploads/banners/{{ $QouteBanner->file_vi }}') no-repeat;
 			}
 			
-
 		</style>		
 	@endif
 	<section class="get-qoute padding ptb-xs-60 parallax overlay-dark">
@@ -773,4 +769,5 @@
 	</section>
 	<!-- End Blog Section -->
 
-@stop
+@endsection
+
