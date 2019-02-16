@@ -1148,93 +1148,11 @@ class FrontendHomeController extends Controller
         // General Webmaster Settings
         $WebmasterSettings = WebmasterSetting::find(1);
 
-        $id = $WebmasterSettings->contact_page_id;
-        $Topic = Topic::where('status', 1)->find($id);
+        
 
+        
 
-        // update visits
-        $Topic->visits = $Topic->visits + 1;
-        $Topic->save();
-
-        // get Webmaster section settings by ID
-        $WebmasterSection = WebmasterSection::find($Topic->webmaster_id);
-
-
-        // Get current Category Section details
-        $CurrentCategory = Section::find($Topic->section_id);
-        // Get a list of all Category ( for side bar )
-        $Categories = Section::where('webmaster_id', '=', $WebmasterSection->id)->where('father_id', '=',
-            '0')->where('status', 1)->orderby('row_no', 'asc')->get();
-
-        // Get Most Viewed
-        $TopicsMostViewed = Topic::where([['webmaster_id', '=', $WebmasterSection->id], ['status', 1], ['expire_date', '>=', date("Y-m-d")], ['expire_date', '<>', null]])->orwhere([['webmaster_id', '=', $WebmasterSection->id], ['status', 1], ['expire_date', null]])->orderby('visits', 'desc')->limit(3)->get();
-
-        // General for all pages
-
-        $WebsiteSettings = Setting::find(1);
-        $HeaderMenuLinks = Menu::where('father_id', $WebmasterSettings->header_menu_id)->where('status',
-            1)->orderby('row_no', 'asc')->get();
-        $FooterMenuLinks = Menu::where('father_id', $WebmasterSettings->footer_menu_id)->where('status',
-            1)->orderby('row_no', 'asc')->get();
-        $FooterMenuLinks_father = Menu::find($WebmasterSettings->footer_menu_id);
-        $FooterMenuLinks_name_vi = "";
-        $FooterMenuLinks_name_en = "";
-        if (count($FooterMenuLinks_father) > 0) {
-            $FooterMenuLinks_name_vi = $FooterMenuLinks_father->title_vi;
-            $FooterMenuLinks_name_en = $FooterMenuLinks_father->title_en;
-        }
-        $SideBanners = Banner::where('section_id', $WebmasterSettings->side_banners_section_id)->where('status',
-            1)->orderby('row_no', 'asc')->get();
-
-        // Get Latest News
-        $LatestNews = Topic::where([['status', 1], ['webmaster_id', $WebmasterSettings->latest_news_section_id], ['expire_date', '>=', date("Y-m-d")], ['expire_date', '<>', null]])->orwhere([['status', 1], ['webmaster_id', $WebmasterSettings->latest_news_section_id], ['expire_date', null]])->orderby('row_no', 'asc')->limit(3)->get();
-
-        // Page Title, Description, Keywords
-        $seo_title_var = "seo_title_" . trans('backLang.boxCode');
-        $seo_description_var = "seo_description_" . trans('backLang.boxCode');
-        $seo_keywords_var = "seo_keywords_" . trans('backLang.boxCode');
-        $tpc_title_var = "title_" . trans('backLang.boxCode');
-        $site_desc_var = "site_desc_" . trans('backLang.boxCode');
-        $site_keywords_var = "site_keywords_" . trans('backLang.boxCode');
-        if ($Topic->$seo_title_var != "") {
-            $PageTitle = $Topic->$seo_title_var;
-        } else {
-            $PageTitle = $Topic->$tpc_title_var;
-        }
-        if ($Topic->$seo_description_var != "") {
-            $PageDescription = $Topic->$seo_description_var;
-        } else {
-            $PageDescription = $WebsiteSettings->$site_desc_var;
-        }
-        if ($Topic->$seo_keywords_var != "") {
-            $PageKeywords = $Topic->$seo_keywords_var;
-        } else {
-            $PageKeywords = $WebsiteSettings->$site_keywords_var;
-        }
-        // .. end of .. Page Title, Description, Keywords
-
-        // ..Calendar
-        // General for all pages
-        $GeneralWebmasterSections = WebmasterSection::where('status', '=', '1')->orderby('row_no', 'asc')->get();
-        // General END
-
-        return view("xpro.lien-he",
-            compact("WebsiteSettings",
-                "WebmasterSettings",
-                "HeaderMenuLinks",
-                "FooterMenuLinks",
-                "FooterMenuLinks_name_vi",
-                "FooterMenuLinks_name_en",
-                "LatestNews",
-                "Topic",
-                "SideBanners",
-                "WebmasterSection",
-                "Categories",
-                "CurrentCategory",
-                "PageTitle",
-                "PageDescription",
-                "PageKeywords",
-                "TopicsMostViewed"));
+        return view("xpro.lien-he");
 
         
        
