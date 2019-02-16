@@ -15,6 +15,6 @@
             </div>
             <!-- Site Wraper End -->
 		
-    @include('xpro.includes.foot')
+        @include('xpro.includes.foot')
 	</body>
 </html>
