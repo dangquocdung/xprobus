@@ -1220,7 +1220,7 @@ class FrontendHomeController extends Controller
                 $GeneralWebmasterSections = WebmasterSection::where('status', '=', '1')->orderby('row_no', 'asc')->get();
                 // General END
 
-                return view("frontEnd.contact",
+                return view("xpro.lien-he",
                     compact("WebsiteSettings",
                         "WebmasterSettings",
                         "HeaderMenuLinks",
