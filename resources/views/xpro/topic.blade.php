@@ -9,7 +9,7 @@
 			<div class="row title">
 				<h1>{{ $Topic->title_vi }}</h1>
 				<div class="page-breadcrumb">
-					<a>Home</a>/<span>Contact</span>
+					<a>Dũng Thịnh</a>/<span>{{ $Topic->title_vi }}</span>
 				</div>
 			</div>
 		</div>
