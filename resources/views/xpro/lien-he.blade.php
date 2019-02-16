@@ -94,6 +94,8 @@
 </section>
 <!-- Contact Section -->
 
+@endsection
+
 
 
 @stop
