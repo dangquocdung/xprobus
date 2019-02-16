@@ -1152,8 +1152,17 @@ class FrontendHomeController extends Controller
 
         
 
-        return view("xpro.lien-he");
+        $site_desc_var = "site_desc_" . trans('backLang.boxCode');
+        $site_keywords_var = "site_keywords_" . trans('backLang.boxCode');
 
+        $PageTitle = ""; // will show default site Title
+        $PageDescription = $WebsiteSettings->$site_desc_var;
+        $PageKeywords = $WebsiteSettings->$site_keywords_var;
+
+        return view('xpro.lien-he',
+            compact("PageTitle",
+                    "PageDescription",
+                    "PageKeywords"));
         
        
 
