@@ -7,7 +7,10 @@
     <div class="container">
         <!-- logo -->
         <div class="logo">
-            <a href="home.html"> <img class="l-white" src="assets/images/logo.png" alt=""/> <img class="l-black" src="assets/images/logo-black.png" alt=""/> </a>
+            <a href="home.html"> 
+                <img class="l-white" src="xpro/assets/images/logo.png" alt=""/> 
+                <img class="l-black" src="xpro/assets/images/logo-black.png" alt=""/> 
+            </a>
         </div>
         <!--End logo-->
         <!-- Navigation Menu -->
@@ -98,4 +101,3 @@
     </div>
 </header>
 <!-- END HEADER -->
-            
