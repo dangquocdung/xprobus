@@ -29,31 +29,3 @@
 
 </section>
 <!-- End Intro Video Section -->
-
-<div class="section-bar">
-    <div class="container-fluid">
-        <div class="row text-center light-color">
-            <div class="col-sm-4 bg-color ptb-60">
-                <div class="section-bar-text">
-                    <h3> Awesome
-                    <br>
-                    Website </h3>
-                </div>
-            </div>
-            <div class="col-sm-4 secondary_bg ptb-60">
-                <div class="section-bar-text">
-                    <h3> Awesome
-                    <br>
-                    Web App </h3>
-                </div>
-            </div>
-            <div class="col-sm-4 bg-color3 ptb-60">
-                <div class="section-bar-text">
-                    <h3> Awesome
-                    <br>
-                    Mobile App </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
