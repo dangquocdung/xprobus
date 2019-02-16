@@ -62,7 +62,7 @@
 			<div class="row ">
 				<div class="col-sm-12">
 					<div class="heading-box pb-30 text-center">
-						<h2><span>Quá trình</span> phát triển</h2>
+						<h2><span>Quá trình</span> nghiên cứu & phát triển</h2>
 						<span class="b-line"></span>
 					</div>
 
@@ -165,7 +165,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="heading-box pb-30">
-						<h2><span>Tư tưởng</span> lãnh đạo</h2>
+						<h2><span>Tư tưởng</span> chủ đạo</h2>
 						<span class="b-line l-left"></span>
 					</div>
 
