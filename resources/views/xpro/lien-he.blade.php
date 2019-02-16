@@ -1,5 +1,5 @@
 
-@extends('xpro.layout-2')
+@extends('xpro.layout')
 
 @section('body')
 
