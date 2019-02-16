@@ -170,6 +170,65 @@
 
 </section>
 
+<!--Team Section-->
+<section id="team" class="padding ptb-xs-60">
+	<div class="container">
+		<div class="row pb-30 text-center">
+			<div class="col-sm-12 mb-20">
+				<div class="creative_heading">
+					<h2>Team</h2>
+				</div>
+
+			</div>
+		</div>
+		@if (!empty($TeamBanners))
+			<div class="row text-center">
+				@foreach($TeamBanners as $team)
+					<div class="col-md-3 col-sm-6 mb-xs-30 mb-sm-30 ">
+						<div class="box-hover img-scale">
+							<figure>
+		
+								@if ($team->file_vi != null && file_exists('uploads/banners/'.$team->file_vi))
+									<img src="/uploads/banners/{{ $team->file_vi }}" alt="{{ $team->title_vi }}">
+								@else
+									<img src="http://placehold.it/600x800" alt="">
+		
+								@endif
+							</figure>
+		
+							<div class="team-block">
+								{!! $team->details_vi !!}
+								<hr class="small-divider border-white">
+								<ul class="social-icons">
+									<li>
+										<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+									</li>
+								</ul>
+							</div>
+		
+						</div>
+					</div>
+				@endforeach
+			</div>
+			
+		@endif
+		
+
+	</div>
+</section>
+<!--Team Section End-->
 
 
 <!-- Work Section -->
@@ -386,8 +445,125 @@
 	</div>
 </section>
 <!-- End Work Section -->
+<!-- Pricing Table -->
 
+<section class="page-section pricing-2 padding ptb-xs-60 columns_padding_25 pricing-style2" id="pricing_table">
+	<div class="container">
+		<div class="row text-center pb-30 pb-x">
+			<div class="col-sm-12">
+				<div class="creative_heading">
+					<h2>Pricing</h2>
+				</div>
 
+			</div>
+		</div>
+		<!-- row end -->
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12 mb-xs-30">
+				<div class="pricing_table">
+					<div class="package_title">
+						<div class="pricing-top bg-color">
+							<p>
+								STARTER
+							</p>
+						</div>
+						<div class="package-price">
+							<span class="currency-symbol">$</span><span class="price">149</span><span class="duration">/month</span>
+						</div>
+
+					</div>
+					<ul class="price_feature">
+						<li>
+							1 GB STORAGE
+						</li>
+						<li>
+							3 DOMAIN NAMES
+						</li>
+						<li>
+							5 FTP USERS
+						</li>
+						<li>
+							FREE SUPPORT
+						</li>
+					</ul>
+					<div class="price_btn">
+						<a href="#!" class="btn xplus-btn pricing">Buy Now</a>
+					</div>
+				</div>
+			</div>
+			<!-- table end -->
+			<div class="col-md-4 col-sm-6 col-xs-12 mb-xs-30">
+				<div class="pricing_table shadow">
+					<div class="package_title">
+						<div class="pricing-top secondary_bg">
+							<p>
+								ADVANCED
+							</p>
+						</div>
+						<div class="package-price">
+							<span class="currency-symbol">$</span><span class="price">249</span><span class="duration">/month</span>
+						</div>
+
+					</div>
+					<ul class="price_feature">
+						<li>
+							1 GB STORAGE
+						</li>
+						<li>
+							3 DOMAIN NAMES
+						</li>
+						<li>
+							5 FTP USERS
+						</li>
+						<li>
+							FREE SUPPORT
+						</li>
+					</ul>
+					<div class="price_btn">
+						<a href="#!" class="btn xplus-btn pricing">Buy Now</a>
+					</div>
+				</div>
+			</div>
+			<!-- table end -->
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="pricing_table">
+					<div class="package_title">
+						<div class="pricing-top bg-color3">
+							<p>
+								BUSINESS
+							</p>
+						</div>
+						<div class="package-price">
+							<span class="currency-symbol">$</span><span class="price">299</span><span class="duration">/month</span>
+						</div>
+
+					</div>
+					<ul class="price_feature">
+						<li>
+							1 GB STORAGE
+						</li>
+						<li>
+							3 DOMAIN NAMES
+						</li>
+						<li>
+							5 FTP USERS
+						</li>
+						<li>
+							FREE SUPPORT
+						</li>
+					</ul>
+					<div class="price_btn =">
+						<a href="#!" class="btn xplus-btn pricing ">Buy Now</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- row end -->
+	</div>
+</section>
+
+<!-- Pricing Table End-->
 <!-- Get a Qoute -->
 
 @if (!empty($QouteBanner))
