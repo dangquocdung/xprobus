@@ -6,32 +6,106 @@
 <!--  Main Banner Start Here-->
 @include('xpro.home.intro-video')
 
-<!--About Us-->
-<section id="about-us" class="pt ptb-xs-60 text-center">
+
+<!--Our Services-->
+<section id="our-services" class="padding ptb-xs-60 text-center">
 	<div class="container">
-		<div class="row pb-30">
-			<div class="col-sm-6 col-sm-offset-3">
-				<div class="creative_heading">
-					<h2>About Us</h2>
-				</div>
-				<p>
-					Our main aim is to make your online life as easy as possible for you. We don’t just build you a website and leave you to it, we take care of your hosting, tech support and manage all your content updates for you for just one single monthly cost.
-				</p>
+		<div class="row pb-60">
+			<div class="col-sm-12 mb-20">
+				<h2><span>Our</span> Services</h2>
+				<span class="b-line"></span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-				@if (!empty($AboutUsBanner))
-					<img src="/uploads/banners/{{ $AboutUsBanner->file_vi }}" alt="{{ $AboutUsBanner->title_vi }}" class="align-center">
-				@else
-					<img src="http://placehold.it/973x476" alt="" class="align-center" />
-				@endif
+
+			<div class="col-md-4 col-sm-6">
+				<div class="featured-item feature-bg-box mb-100 gray-bg">
+					<div class="icon">
+						<i class="ion-easel"></i>
+					</div>
+					<div class="title text-uppercase">
+						<h4>BUSINESS PLANNING</h4>
+					</div>
+					<div class="desc">
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="featured-item feature-bg-box gray-bg mb-100 sub-color_hover">
+					<div class="icon">
+						<i class="ion-stats-bars sub-color"></i>
+					</div>
+					<div class="title text-uppercase">
+						<h4>MARKETING PLANNING</h4>
+					</div>
+					<div class="desc">
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="featured-item feature-bg-box gray-bg mb-100">
+					<div class="icon">
+						<i class="ion-arrow-graph-up-left"></i>
+					</div>
+					<div class="title text-uppercase">
+						<h4> MARKET RESEARCH</h4>
+					</div>
+					<div class="desc">
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="featured-item feature-bg-box gray-bg sub-color_hover mb-sm-100">
+					<div class="icon">
+						<i class="ion-thumbsup sub-color"></i>
+					</div>
+					<div class="title text-uppercase">
+						<h4>Risk Management</h4>
+					</div>
+					<div class="desc">
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="featured-item feature-bg-box gray-bg ">
+					<div class="icon">
+						<i class="ion-pie-graph"></i>
+					</div>
+					<div class="title text-uppercase">
+						<h4>TAXATION SERVICES</h4>
+					</div>
+					<div class="desc">
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="featured-item feature-bg-box gray-bg sub-color_hover mb-xs-0 ">
+					<div class="icon">
+						<i class="ion-help-buoy sub-color"></i>
+					</div>
+					<div class="title text-uppercase">
+						<h4>Suppport Team</h4>
+					</div>
+					<div class="desc">
+						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</div>
+				</div>
 			</div>
 		</div>
 
 	</div>
 </section>
-<!--About Us End -->
+<!--Our Services End -->
+
+
 <section id="choose_us" class="padding pt-xs-60 overflow_hidden secondary_bg">
 	@if (!empty($WhyUsBanner))
 
