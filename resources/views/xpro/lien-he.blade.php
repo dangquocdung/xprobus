@@ -107,4 +107,11 @@
 	</section>
 	<!-- Contact Section -->
 
+
+	<script>
+		$(document).ready(function(){
+			$(".header").addClass("sticky");
+		})
+	</script>
+
 @stop
