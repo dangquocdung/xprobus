@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-8">
 					<div class="heading-box pb-30">
-						<h2><span>Our</span> Mission</h2>
+						<h2>Nhiệm vụ <span>của chúng tôi</span></h2>
 						<span class="b-line l-left"></span>
 					</div>
 					<div class="text-content">
@@ -62,7 +62,7 @@
 			<div class="row ">
 				<div class="col-sm-12">
 					<div class="heading-box pb-30 text-center">
-						<h2><span>Our</span> Journey</h2>
+						<h2><span>Quá trình</span> phát triển</h2>
 						<span class="b-line"></span>
 					</div>
 
@@ -165,7 +165,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="heading-box pb-30">
-						<h2><span>Thought</span> Leaders</h2>
+						<h2><span>Tư tưởng</span> lãnh đạo</h2>
 						<span class="b-line l-left"></span>
 					</div>
 
