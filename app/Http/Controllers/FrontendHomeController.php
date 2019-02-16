@@ -87,16 +87,12 @@ class FrontendHomeController extends Controller
 
         $ParallaxBanner = Banner::where('section_id', 10)->where('status',1)->first();
 
-
-        
         // Get Home page slider banners
         // $TopBanners = Banner::where('section_id', 5)->where('status',1)->orderby('row_no', 'asc')->get();
 
         //Side Banner
         // $SideBanners = Banner::where('section_id', $WebmasterSettings->side_banners_section_id)->where('status',1)->orderby('row_no', 'asc')->get();
        
-        
-
         view()->share('WebmasterSettings',$WebmasterSettings);
         view()->share('WebsiteSettings',$WebsiteSettings);
         view()->share('HeaderMenuLinks',$HeaderMenuLinks);
@@ -106,13 +102,11 @@ class FrontendHomeController extends Controller
         view()->share('QouteBanner',$QouteBanner);
         view()->share('ParallaxBanner',$ParallaxBanner);
 
-
         // view()->share('FeatureMenuLinks',$FeatureMenuLinks);
         // view()->share('MainMenuLinks',$MainMenuLinks);
         // view()->share('ThoiSuMenuLinks',$ThoiSuMenuLinks);
     }
     
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -256,7 +250,6 @@ class FrontendHomeController extends Controller
         // Get Home page slider banners
         $SliderBanners = Banner::where('section_id', $WebmasterSettings->home_banners_section_id)->where('status',1)->orderby('row_no', 'asc')->get();
 
-
         $site_desc_var = "site_desc_" . trans('backLang.boxCode');
         $site_keywords_var = "site_keywords_" . trans('backLang.boxCode');
 
@@ -394,10 +387,8 @@ class FrontendHomeController extends Controller
                                                     ->paginate(env('FRONTEND_PAGINATION'));
             }
 
-
             // General for all pages
             $WebsiteSettings = Setting::find(1);
-
 
             // Page Title, Description, Keywords
             if (count($CurrentCategory) > 0) {
@@ -1151,10 +1142,6 @@ class FrontendHomeController extends Controller
         // General for all pages
         $WebsiteSettings = Setting::find(1);
 
-        
-
-        
-
         $site_desc_var = "site_desc_" . trans('backLang.boxCode');
         $site_keywords_var = "site_keywords_" . trans('backLang.boxCode');
 
@@ -1167,8 +1154,6 @@ class FrontendHomeController extends Controller
                     "PageDescription",
                     "PageKeywords"));
         
-       
-
     }
 
     /**
@@ -1635,6 +1620,5 @@ class FrontendHomeController extends Controller
     {
         return view("xpro.lps");
     }
-
 
 }
