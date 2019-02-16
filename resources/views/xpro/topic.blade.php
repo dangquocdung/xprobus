@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-8">
 					<div class="heading-box pb-30">
-						<h2>Nhiệm vụ <span>của chúng tôi</span></h2>
+						<h2>{{ $Topic->title_vi }}</h2>
 						<span class="b-line l-left"></span>
 					</div>
 					<div class="text-content">
