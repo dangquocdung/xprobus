@@ -1148,6 +1148,9 @@ class FrontendHomeController extends Controller
         // General Webmaster Settings
         $WebmasterSettings = WebmasterSetting::find(1);
 
+        // General for all pages
+        $WebsiteSettings = Setting::find(1);
+
         
 
         
