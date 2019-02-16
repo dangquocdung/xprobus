@@ -7,7 +7,7 @@
 	<section class="inner-intro  padding bg-img1 overlay-dark light-color">
 		<div class="container">
 			<div class="row title">
-				<h1>Contact</h1>
+				<h1>{{ $Topic->title_vi }}</h1>
 				<div class="page-breadcrumb">
 					<a>Home</a>/<span>Contact</span>
 				</div>
@@ -223,7 +223,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="heading-box pb-30 text-center">
-						<h2><span>Our</span> Paetners</h2>
+						<h2><span>Our</span> Partners</h2>
 						<span class="b-line"></span>
 					</div>
 
