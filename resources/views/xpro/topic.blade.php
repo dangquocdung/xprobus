@@ -27,14 +27,13 @@
 					</div>
 					<div class="text-content">
 						<p>
-							Aenean suscipit eget mi act fermentum phasellus vulputate turpis tincidunt. Aenean suscipit eget mi act fermentum phasellus vulputate turpis tincidunt.
-							Aenean suscipit eget mi act fermentum phasellus vulputate turpis tincidunt. Aenean suscipit eget mi act fermentum phasellus vulputate turpis tincidunt.
+							{{ $Topic->sapo }}
 						</p>
 					</div>
 					<hr class="divider">
 					<div class="post-content">
 						<div class="post-img">
-							<img class="img-responsive" src="http://placehold.it/750x260" alt="Photo">
+							<img class="img-responsive" src="/xpro/assets/images/blog.jpg" alt="Photo">
 						</div>
 					</div>
 				</div>
@@ -175,7 +174,7 @@
 				<div class="col-sm-12">
 					<div class="about-block clearfix">
 						<div class="fl width-25per box-shadow  mb-xs-15">
-							<img class="img-responsive" src="http://placehold.it/285x335" alt="Photo">
+							<img class="img-responsive" src="/xpro/assets/images/about-1.jpg" alt="Photo">
 						</div>
 						<div class="text-box pt-45 pb-15 pl-70 pl-xs-0 width-75per fl mt-xs-30">
 							<div class="box-title">
@@ -195,7 +194,7 @@
 					</div>
 					<div class="about-block mb-40 mt-40 clearfix">
 						<div class="fr width-25per box-shadow-l mb-xs-15">
-							<img class="img-responsive" src="http://placehold.it/285x335" alt="Photo">
+							<img class="img-responsive" src="/xpro/assets/images/about-2.jpg" alt="Photo">
 						</div>
 						<div class="text-box text-right text-xs-left pt-45 pr-70 pr-xs-0 mt-xs-30 width-75per fl">
 							<div class="box-title">
@@ -233,34 +232,7 @@
 				<div class="col-sm-12">
 					<ul class="logo-group">
 						<li class="partner-logo border-b">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo border-b">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo border-b">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo border-b">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo border-b border-r">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo ">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo">
-							<img src="http://placehold.it/135x140" alt="">
-						</li>
-						<li class="partner-logo border-r">
-							<img src="http://placehold.it/135x140" alt="">
+							<img src="/xpro/assets/images/client-logo/1.png" alt="">
 						</li>
 					</ul>
 				</div>
